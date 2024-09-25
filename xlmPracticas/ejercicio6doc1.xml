@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE documento [
+        <!ELEMENT documento (p|destacar)*>
+        <!ELEMENT p (#PCDATA)>
+        <!ELEMENT destacar (#PCDATA)>
+        <!ATTLIST destacar
+                importancia CDATA #REQUIRED>
+        ]>
+<documento>
+    <p>Mi primer documento XML</p>
+    <destacar importancia="1"> </destacar>
+    <p>Comienza con la etiqueta &gt; </p>
+    <p> A continuación colocamos un elemento sin contenido</p>
+</documento>

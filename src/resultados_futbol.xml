@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE LaLiga [
+        <!ELEMENT LaLiga (partido+)>
+        <!ELEMENT lugar (#PCDATA)>
+        <!ELEMENT resultado_final (#PCDATA)>
+        <!ELEMENT partido (equipo_local, equipo_visitante, estadio, lugar,resultado_final,estadisticas+)>
+        <!ELEMENT equipo_local (nombre,racha)>
+        <!ELEMENT equipo_visitante (nombre,racha)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT racha (#PCDATA)>
+        <!ELEMENT estadio (#PCDATA)>
+        <!ELEMENT estadisticas (goles, tarjeta_amarilla, tarjeta_roja)>
+        <!ELEMENT goles (#PCDATA)>
+        <!ELEMENT tarjeta_amarilla (#PCDATA)>
+        <!ELEMENT tarjeta_roja (#PCDATA)>
+        <!ATTLIST partido
+                jornada CDATA #REQUIRED
+                fecha CDATA #REQUIRED>
+        <!ATTLIST estadisticas
+                equipo CDATA #REQUIRED>
+
+        ]>
+<LaLiga>
+    <partido jornada="6" fecha="Viernes 20 de septiembre del 2024">
+        <equipo_local>
+            <nombre>Alaves</nombre>
+            <racha>3-1-2</racha>
+        </equipo_local>
+        <equipo_visitante>
+            <nombre>Sevilla</nombre>
+            <racha>1-2-3</racha>
+        </equipo_visitante>
+        <estadio>Mendizorroza</estadio>
+        <lugar>Vitoria Gasteiz,España</lugar>
+        <resultado_final>2-1</resultado_final>
+        <estadisticas equipo="Alaves">
+            <goles>C Vicente-17', C Martin-60'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+        <estadisticas equipo="Sevilla">
+            <goles>D Lukebakio</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+    </partido>
+    <partido jornada="6" fecha="Sabado 21 de septiembre del 2024">
+        <equipo_local>
+            <nombre>Real Valladolid</nombre>
+            <racha>1-2-4</racha>
+        </equipo_local>
+        <equipo_visitante>
+            <nombre>Real Sociedad</nombre>
+            <racha>1-2-4</racha>
+        </equipo_visitante>
+        <estadio>José Zorrilla</estadio>
+        <lugar>Valladolid,España</lugar>
+        <resultado_final>0-0</resultado_final>
+        <estadisticas equipo="Real Valladolid">
+            <goles>0</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+        <estadisticas equipo="Real Sociedad">
+            <goles>0</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+    </partido>
+    <partido jornada="6" fecha="Sabado 21 de septimebre del 2024">
+        <equipo_local>
+            <nombre>Osasuna</nombre>
+            <racha>3-1-2</racha>
+        </equipo_local>
+        <equipo_visitante>
+            <nombre>Las Palmas</nombre>
+            <racha>0-2-4</racha>
+        </equipo_visitante>
+        <estadio>El sadar</estadio>
+        <lugar>Pamplona, España</lugar>
+        <resultado_final>2-1</resultado_final>
+        <estadisticas equipo="Osasuna">
+            <goles>A Budimir-39', A Oroz-60'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+        <estadisticas equipo="Las Palmas">
+            <goles>A Moleiro-41'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+    </partido>
+    <partido jornada="6" fecha="Sabado 21 de septiembre del 2024">
+        <equipo_local>
+            <nombre>Valencia</nombre>
+            <racha>1-1-4</racha>
+        </equipo_local>
+        <equipo_visitante>
+            <nombre>Girona</nombre>
+            <racha>2-1-3</racha>
+        </equipo_visitante>
+        <estadio>Mestalla</estadio>
+        <lugar>Valencia,España</lugar>
+        <resultado_final>2-0</resultado_final>
+        <estadisticas equipo="Valencia">
+            <goles>L Rioja-56',D Gómez-58'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+        <estadisticas equipo="Girona">
+            <goles>0</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+    </partido>
+    <partido jornada="6" fecha="Sabado 21 de Septiembre del 2024">
+        <equipo_local>
+            <nombre>Real Madrid</nombre>
+            <racha>4-2-0</racha>
+        </equipo_local>
+        <equipo_visitante>
+            <nombre>Espanyol</nombre>
+            <racha>2-1-3</racha>
+        </equipo_visitante>
+        <estadio>Santiago Bernabéu</estadio>
+        <lugar>Madrid,España</lugar>
+        <resultado_final>4-1</resultado_final>
+        <estadisticas equipo="Real Madrid">
+            <goles>D Carbajal-58',Rodrygo-75',Vinicius Junior-78',K Mbappé-90'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+        <estadisticas equipo="Espanyol">
+            <goles>T Courtois-54'EC</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+    </partido>
+    <partido jornada="6" fecha="Domingo 22 de septiembre del 2024">
+        <equipo_local>
+            <nombre>Getafe</nombre>
+            <racha>0-4-2</racha>
+        </equipo_local>
+        <equipo_visitante>
+            <nombre>Leganés</nombre>
+            <racha>1-3-3</racha>
+        </equipo_visitante>
+        <estadio>Coliseum</estadio>
+        <lugar>Getafe,España</lugar>
+        <resultado_final>1-1</resultado_final>
+        <estadisticas equipo="Getafe">
+            <goles>B Mayoral-83'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+        <estadisticas equipo="Leganés">
+            <goles>Jorge-76'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+    </partido>
+    <partido jornada="6" fecha="Domingo 22 de septiembre del 2024">
+        <equipo_local>
+            <nombre>Athletic Club</nombre>
+            <racha>4-1-2</racha>
+        </equipo_local>
+        <equipo_visitante>
+            <nombre>Celta Vigo</nombre>
+            <racha>3-0-3</racha>
+        </equipo_visitante>
+        <estadio>San mamés</estadio>
+        <lugar>Bilbao,España</lugar>
+        <resultado_final>3-1</resultado_final>
+        <estadisticas equipo="Athletic Club">
+            <goles>G Guruzeta-4',39', Á Djaló-80'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+        <estadisticas equipo="Celta Vigo">
+            <goles>I Aspas-25'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+    </partido>
+    <partido jornada="6" fecha="Domingo 22 de septimebre del 2024">
+        <equipo_local>
+            <nombre>Villarreal</nombre>
+            <racha>3-2-1</racha>
+        </equipo_local>
+        <equipo_visitante>
+            <nombre>Barcelona</nombre>
+            <racha>6-0-0</racha>
+        </equipo_visitante>
+        <estadio>Estadio de la Cerámica</estadio>
+        <lugar>Villareal,España</lugar>
+        <resultado_final>1-5</resultado_final>
+        <estadisticas equipo="Villarreal">
+            <goles>A Pérez-38'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+        <estadisticas equipo="Barcelona">
+            <goles>R Lewandowski-20',35',P Torre-58',Raphinha-75',83'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+    </partido>
+    <partido jornada="6" fecha="Domingo 22 de septiembre del 2024">
+        <equipo_local>
+            <nombre>Rayo Vallecano</nombre>
+            <racha>2-2-2</racha>
+        </equipo_local>
+        <equipo_visitante>
+            <nombre>Atlético Madrid</nombre>
+            <racha>3-3-0</racha>
+        </equipo_visitante>
+        <estadio>Estadio de Vallecas</estadio>
+        <lugar>Madrid,España</lugar>
+        <resultado_final>1-1</resultado_final>
+        <estadisticas equipo="Rayo Vallecano">
+            <goles>I Palazón</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+        <estadisticas equipo="Atlético Madrid">
+            <goles>C Callagher-50'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+    </partido>
+    <partido jornada="6" fecha="Lunes 23 de septiembre del 2024">
+        <equipo_local>
+            <nombre>Real Betis</nombre>
+            <racha>2-2-2</racha>
+        </equipo_local>
+        <equipo_visitante>
+            <nombre>Mallorca</nombre>
+            <racha>3-2-2</racha>
+        </equipo_visitante>
+        <estadio>Benito Villamarín</estadio>
+        <lugar>Sevilla,España</lugar>
+        <resultado_final>1-2</resultado_final>
+        <estadisticas equipo="Real Betis">
+            <goles>G Lo Celso-7'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+        <estadisticas equipo="Mallorca">
+            <goles>D Rodriguez-8',V Fernández-90'+3'</goles>
+            <tarjeta_amarilla>0</tarjeta_amarilla>
+            <tarjeta_roja>0</tarjeta_roja>
+        </estadisticas>
+    </partido>
+</LaLiga>

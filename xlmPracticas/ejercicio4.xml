@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE CD_Oferta [
+        <!ELEMENT CD_Oferta (titulo,artista,pais,compania_discografica,precio,anio_publicacion)*>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT artista (#PCDATA)>
+        <!ELEMENT pais (#PCDATA)>
+        <!ELEMENT compania_discografica (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+        <!ELEMENT anio_publicacion (#PCDATA)>
+        ]>
+<CD_Oferta>
+    <titulo>
+        Still got the blues
+    </titulo>
+    <artista >
+        Gary Moore
+    </artista>
+    <pais>
+        UK
+    </pais>
+    <compania_discografica>
+        Virgin Records
+    </compania_discografica>
+    <precio>
+        10.20
+    </precio>
+    <anio_publicacion>
+        1990
+    </anio_publicacion>
+    <titulo>
+        One night only
+    </titulo>
+    <artista>
+        Bee Gees
+    </artista>
+    <pais>
+        UK
+    </pais>
+    <compania_discografica>
+        Polydor
+    </compania_discografica>
+    <precio>
+        10.90
+    </precio>
+    <anio_publicacion>
+        1998
+    </anio_publicacion>
+    <titulo>
+        When a man loves a woman
+    </titulo>
+    <artista>
+        Percy Sledge
+    </artista>
+    <pais>
+        USA
+    </pais>
+    <compania_discografica>
+        Atlantic
+    </compania_discografica>
+    <precio>
+        8.70
+    </precio>
+    <anio_publicacion>
+        1987
+    </anio_publicacion>
+    <titulo>
+        Big Willie style
+    </titulo>
+    <artista >
+        Will Smith
+    </artista>
+    <pais>
+        USA
+    </pais>
+    <compania_discografica>
+        Columbia
+    </compania_discografica>
+    <precio>
+        9.90
+    </precio>
+    <anio_publicacion>
+        1997
+    </anio_publicacion>
+    <titulo>
+        La canción de Juan Perro
+    </titulo>
+    <artista >
+        Radio Futura
+    </artista>
+    <pais>
+        España
+    </pais>
+    <compania_discografica>
+        Sony Music-Ariola
+    </compania_discografica>
+    <precio>
+        9.90
+    </precio>
+    <anio_publicacion>
+        1987
+    </anio_publicacion>
+    <titulo>
+        The dock of the bay
+    </titulo>
+    <artista >
+        Otis Redding
+    </artista>
+    <pais>
+        USA
+    </pais>
+    <compania_discografica>
+        Atlantic
+    </compania_discografica>
+    <precio>
+        7.90
+    </precio>
+    <anio_publicacion>
+        1987
+    </anio_publicacion>
+</CD_Oferta>

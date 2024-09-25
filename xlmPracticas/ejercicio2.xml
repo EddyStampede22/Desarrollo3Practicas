@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE Enviar_mensaje [
+        <!ELEMENT Enviar_mensaje (Mensaje)+>
+        <!ELEMENT Mensaje (Remite,Destinatario,Asunto,Texto)>
+        <!ELEMENT Remite (nombre_R,email_R)>
+        <!ELEMENT nombre_R (#PCDATA)>
+        <!ELEMENT email_R (#PCDATA)>
+        <!ELEMENT Destinatario (nombre_D,email_D)>
+        <!ELEMENT nombre_D (#PCDATA)>
+        <!ELEMENT email_D (#PCDATA)>
+        <!ELEMENT Asunto (#PCDATA)>
+        <!ELEMENT Texto (parrafo)+>
+        <!ELEMENT parrafo (#PCDATA)>
+        ]>
+<Enviar_mensaje>
+    <Mensaje>
+        <Remite>
+            <nombre_R>
+                Alfredo Reino
+            </nombre_R>
+            <email_R>
+                alf@ibium.com
+            </email_R>
+        </Remite>
+        <Destinatario>
+            <nombre_D>
+                Bill Clinton
+            </nombre_D>
+            <email_D>
+                president@whitehouse.gov
+            </email_D>
+        </Destinatario>
+        <Asunto>
+            Hola Bill
+        </Asunto>
+        <Texto>
+            <parrafo>
+                ¿ Hola qué tal?
+            </parrafo>
+            <parrafo>
+                Hace mucho no escribes. A ver si llamas y quedamos pronto.
+            </parrafo>
+            <parrafo>Un saludo</parrafo>
+        </Texto>
+    </Mensaje>
+</Enviar_mensaje>

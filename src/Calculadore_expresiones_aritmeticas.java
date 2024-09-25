@@ -18,6 +18,7 @@ public class Calculadore_expresiones_aritmeticas {
             System.out.println("notación posfija: "+postfix);
             List<String> lista = new ArrayList<>(Collections.emptyList());
             List<String> lista2 = new ArrayList<>(Collections.emptyList());
+            List<String> lista3 = new ArrayList<>(Collections.emptyList());
             double operacion=0d;
             for (String n:postfix) {
                 if (isOperand(n)){
@@ -29,7 +30,7 @@ public class Calculadore_expresiones_aritmeticas {
                             if(lista.isEmpty()){
                                 operacion=0;
                                 for (String l:lista2){
-                                    System.out.println(l);
+
                                     operacion+=Double.parseDouble(l);
                                 }
                             }else {
@@ -44,7 +45,6 @@ public class Calculadore_expresiones_aritmeticas {
                             if(lista.isEmpty()){
                                 operacion=0;
                                 for (String l:lista2){
-                                    System.out.println(l);
                                     operacion-=Double.parseDouble(l);
                                 }
                             }else {
@@ -59,7 +59,6 @@ public class Calculadore_expresiones_aritmeticas {
                             if(lista.isEmpty()){
                                 operacion=0;
                                 for(String m:lista2){
-                                    System.out.println(m);
                                     if(operacion==0){
                                         operacion=Double.parseDouble(m);
                                     }
@@ -110,8 +109,6 @@ public class Calculadore_expresiones_aritmeticas {
                                     operacion=Double.parseDouble(m);
                                     if(!Objects.equals(m, "0")){
                                         for(String l:lista2){
-                                            System.out.println(l);
-                                            System.out.println(operacion);
                                             operacion=Double.parseDouble(l)/operacion;
                                         }
                                     }
@@ -158,10 +155,12 @@ public class Calculadore_expresiones_aritmeticas {
                                     operacion=Double.parseDouble(m);
                                     for(String l:lista2){
                                         operacion=Math.pow(Double.parseDouble(l),operacion);
+
                                     }
                                 }
                                 lista.clear();
                                 lista2.add(String.valueOf(operacion));
+                                lista3.add(String.valueOf(operacion));
                             }else {
                                 for(String m:lista) {
                                     if(operacion==0){

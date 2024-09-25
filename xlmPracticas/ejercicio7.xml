@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE factura [
+        <!ELEMENT factura (informacion_contacto_empresa,bill_to,ship_to,invoice_details,description_services,costumer_message)*>
+        <!ELEMENT informacion_contacto_empresa (business_name,street_adress,city,state,zip_code,phone_number,email,website)>
+        <!ELEMENT business_name (#PCDATA)>
+        <!ELEMENT street_adress (#PCDATA)>
+        <!ELEMENT city (#PCDATA)>
+        <!ELEMENT state (#PCDATA)>
+        <!ELEMENT zip_code (#PCDATA)>
+        <!ELEMENT phone_number (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT website (#PCDATA)>
+        <!ELEMENT bill_to (billto_client_name,billto_street_adress,billto_city,billto_state,billto_zipcode)>
+        <!ELEMENT billto_client_name (#PCDATA)>
+        <!ELEMENT billto_street_adress (#PCDATA)>
+        <!ELEMENT billto_city (#PCDATA)>
+        <!ELEMENT billto_state (#PCDATA)>
+        <!ELEMENT billto_zipcode (#PCDATA)>
+        <!ELEMENT ship_to (ship_to_client_name,ship_to_street_adress,ship_to_city,ship_to_state,ship_to_zipcode)>
+        <!ELEMENT ship_to_client_name (#PCDATA)>
+        <!ELEMENT ship_to_street_adress (#PCDATA)>
+        <!ELEMENT ship_to_city (#PCDATA)>
+        <!ELEMENT ship_to_state (#PCDATA)>
+        <!ELEMENT ship_to_zipcode (#PCDATA)>
+        <!ELEMENT invoice_details (invoice,invoice_date,terms_due)>
+        <!ELEMENT invoice (#PCDATA)>
+        <!ELEMENT invoice_date (#PCDATA)>
+        <!ELEMENT terms_due (#PCDATA)>
+        <!ELEMENT description_services (productorservice*,subtotal,sales_tax,shipping,total)>
+        <!ELEMENT productorservice (name,description,qtyorhrs,rate,amount)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT qtyorhrs (#PCDATA)>
+        <!ELEMENT rate (#PCDATA)>
+        <!ELEMENT amount (#PCDATA)>
+        <!ELEMENT subtotal (#PCDATA)>
+        <!ELEMENT sales_tax (#PCDATA)>
+        <!ELEMENT shipping (#PCDATA)>
+        <!ELEMENT total (#PCDATA)>
+        <!ELEMENT costumer_message (#PCDATA)>
+        ]>
+<factura>
+    <informacion_contacto_empresa>
+        <business_name>
+        </business_name>
+        <street_adress>
+        </street_adress>
+        <city>
+        </city>
+        <state>
+        </state>
+        <zip_code>
+        </zip_code>
+        <phone_number>
+        </phone_number>
+        <email>
+        </email>
+        <website>
+        </website>
+</informacion_contacto_empresa>
+    <bill_to>
+        <billto_client_name>
+        </billto_client_name>
+        <billto_street_adress>
+        </billto_street_adress>
+        <billto_city>
+        </billto_city>
+        <billto_state>
+        </billto_state>
+        <billto_zipcode>
+        </billto_zipcode>
+    </bill_to>
+    <ship_to>
+        <ship_to_client_name>
+        </ship_to_client_name>
+        <ship_to_street_adress>
+        </ship_to_street_adress>
+        <ship_to_city>
+        </ship_to_city>
+        <ship_to_state>
+        </ship_to_state>
+        <ship_to_zipcode>
+        </ship_to_zipcode>
+    </ship_to>
+    <invoice_details>
+        <invoice>
+        </invoice>
+        <invoice_date>
+        </invoice_date>
+        <terms_due>
+        </terms_due>
+    </invoice_details>
+<description_services>
+    <productorservice>
+        <name>
+        </name>
+        <description>
+        </description>
+        <qtyorhrs>
+        </qtyorhrs>
+        <rate>
+        </rate>
+        <amount>
+        </amount>
+    </productorservice>
+    <subtotal>
+    </subtotal>
+    <sales_tax>
+    </sales_tax>
+    <shipping>
+    </shipping>
+    <total>
+    </total>
+</description_services>
+    <costumer_message>
+        Hello!
+        Thank you for your purchase. Please return this invoice with
+        payment. Thanks
+    </costumer_message>
+</factura>
