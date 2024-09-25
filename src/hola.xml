@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+        <!ELEMENT biblioteca (libro+)>
+        <!ELEMENT libro (titulo, autor, precio)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+        <!ATTLIST libro
+                id ID #REQUIRED
+                idioma CDATA #IMPLIED>
+        ]>
+<biblioteca>
+    <libro id="libro1" idioma="español">
+        <titulo>Aprendiendo XML</titulo>
+        <autor>Juan Pérez</autor>
+        <precio>29.99</precio>
+    </libro>
+    <libro id="libro2">
+        <titulo>Desarrollo Web con XML</titulo>
+        <autor>María García</autor>
+        <precio>35.50</precio>
+    </libro>
+</biblioteca>
