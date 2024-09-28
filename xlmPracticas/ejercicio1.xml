@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE Entregas [
-        <!ELEMENT Entregas (Pedido+)>
-        <!ELEMENT Pedido (Destinario,Articulo,Direccion_Entrega,Fecha_Entrega)+>
-        <!ELEMENT Destinario (nombre_D,apellidos)>
+        <!ELEMENT Entregas (pedido+)>
+        <!ELEMENT pedido (destinario,articulo,direccion_entrega,fecha_entrega)+>
+        <!ELEMENT destinario (nombre_D,apellidos)>
         <!ELEMENT nombre_D (#PCDATA)>
         <!ELEMENT apellidos (#PCDATA)>
-        <!ELEMENT Articulo (nombre,marca)+>
+        <!ELEMENT articulo (nombre,marca)+>
         <!ELEMENT nombre (#PCDATA)>
         <!ELEMENT marca (#PCDATA)>
-        <!ELEMENT Direccion_Entrega (calle,numero,detalles_del_lugar)>
+        <!ELEMENT direccion_entrega (calle,numero,detalles_del_lugar)>
         <!ELEMENT calle (#PCDATA)>
         <!ELEMENT numero (#PCDATA)>
         <!ELEMENT detalles_del_lugar (#PCDATA)>
-        <!ELEMENT Fecha_Entrega (dia,mes,anio)>
+        <!ELEMENT fecha_entrega (dia,mes,anio)>
         <!ELEMENT dia (#PCDATA)>
         <!ELEMENT mes (#PCDATA)>
         <!ELEMENT anio (#PCDATA)>
         ]>
 <Entregas>
-    <Pedido>
-        <Destinario>
+    <pedido>
+        <destinario>
             <nombre_D>Juan</nombre_D>
             <apellidos>Delgado Martínez</apellidos>
-        </Destinario>
-        <Articulo>
+        </destinario>
+        <articulo>
             <nombre>Bicicleta</nombre>
             <marca>Bianchi Oltre</marca>
-        </Articulo>
-        <Direccion_Entrega>
+        </articulo>
+        <direccion_entrega>
             <calle>Reforma</calle>
             <numero>423</numero>
             <detalles_del_lugar>tercer piso,letra A</detalles_del_lugar>
-        </Direccion_Entrega>
-        <Fecha_Entrega>
+        </direccion_entrega>
+        <fecha_entrega>
             <dia>19</dia>
             <mes>09</mes>
             <anio>2021</anio>
-        </Fecha_Entrega>
-    </Pedido>
+        </fecha_entrega>
+    </pedido>
 </Entregas>
