@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE factura [
-        <!ELEMENT factura (informacion_contacto_empresa,bill_to,ship_to,invoice_details,description_services,costumer_message)*>
-        <!ELEMENT informacion_contacto_empresa (business_name,street_adress,city,state,zip_code,phone_number,email,website)>
+        <!ELEMENT factura (business_contact_information,bill_to,ship_to,invoice_details,description_services,costumer_message)*>
+        <!ELEMENT business_contact_information (business_name,street_adress,city,state,zip_code,phone_number,email,website)>
         <!ELEMENT business_name (#PCDATA)>
         <!ELEMENT street_adress (#PCDATA)>
         <!ELEMENT city (#PCDATA)>
@@ -40,7 +40,7 @@
         <!ELEMENT costumer_message (#PCDATA)>
         ]>
 <factura>
-    <informacion_contacto_empresa>
+    <business_contact_information>
         <business_name>
         </business_name>
         <street_adress>
@@ -57,7 +57,7 @@
         </email>
         <website>
         </website>
-</informacion_contacto_empresa>
+</business_contact_information>
     <bill_to>
         <billto_client_name>
         </billto_client_name>
